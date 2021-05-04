@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <script type = "text/javascript" >
+    function preventBack(){window.history.forward();}
+    setTimeout("preventBack()", 0);
+    window.onunload=function(){null};
+  </script>
+
+  <link rel = "icon" href = "child_hat_boy_people_icon_124585.ico" type = "image/x-icon">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Jogo do Diogo</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/regras.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="background d-flex" id="wrapper">
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav id="navbar" class="navbar navbar-expand-lg navbar-light">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <a class="navbar-brand" href="firstpage.html">
+            <div class="logo-image">
+              <img src="logo.png" class="img-fluid">
+            </div>
+          </a>
+
+          <!-- AQUI PODERIA ESTAR A MESMA IMAGEM QUE ESTÁ NAS CARTAS -->
+
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="regras.html">Regras</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Templates
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="template_atividades.html">Atividades</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="template_perguntas.html">Perguntas</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="atividades_indoor.html">Atividades em Casa</a>
+            <li class="nav-item dropdown">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Logout</a>
+            <li class="nav-item dropdown">
+          </ul>
+        </div>
+      </nav>
+
+
+      <div id="template_atividades" class="container-fluid">
+        <h2 class="mt-4" align="center"> Clica na imagem que queres decarregar:</h2>
+        <a href="atividades_ar_livre.pdf" download>
+          <img src="atividades_ar_livre.PNG" alt="museus e arte" width="400" height="200">
+        </a>
+        <a href="atividades_casa.pdf" download>
+          <img src="atividades_casa.PNG" alt="dinossauros" width="400" height="200">
+        </a>
+        <a href="template_atividades.pdf" download>
+          <img src="template_atividades.PNG" alt="template perguntas" width="400" height="200">
+        </a>
+      </div>
+
+
+    <!-- /#page-content-wrapper -->
+
+  </div>
+    <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+  </div>
+</body>
+
+</html>
