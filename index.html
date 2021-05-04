@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html href="en">
+
+<head>
+    <link href="css/login.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel = "icon" href = "child_hat_boy_people_icon_124585.ico" type = "image/x-icon">
+    <!------ Include the above in your HEAD tag ---------->
+
+    <script type = "text/javascript" >
+        function preventBack(){window.history.forward();}
+        setTimeout("preventBack()", 0);
+        window.onunload=function(){null};
+    </script>
+
+    <script>
+        $(document).ready(function(){
+        $('#username').keypress(function(e){
+            if(e.keyCode==13)
+                $('#log').click();
+        });
+            $('#password').keypress(function(e){
+                if(e.keyCode==13)
+                    $('#log').click();
+            });
+    });</script>
+</head>
+
+<body>
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+            <!-- Tabs Titles -->
+
+            <!-- Icon -->
+            <div class="fadeIn first">
+                <img src="child_hat_boy_people_icon_124585.ico" width="60" height="150" id="icon" alt="User Icon" />
+            </div>
+
+            <!-- Login Form -->
+
+            <form>
+                <input type="text" id="username" class="fadeIn second" name="username" placeholder="username" required>
+                <input type="password" id="password" class="fadeIn third" name="password" placeholder="password" required>
+
+                <div class="buttonIn">
+                    <input id="log" type="button" checked="checked" class="fadeIn fourth" class="button_active" onclick=validate() class= "buttonIn" value="Log In">
+                </div>
+            </form>
+
+
+
+        </div>
+    </div>
+
+    <! javascript>
+    <script language="javascript">
+        function validate()
+        {
+
+            var username=document.getElementById("username").value;
+            var password=document.getElementById("password").value;
+
+            if(username=="meujogo" && password=="aniversario2021") {
+                location.href = "firstpage.html";
+            }
+            else
+            {
+                alert("Username ou Password Errados. Tenta Novamente");
+                return false;
+            }
+
+        }
+    </script>
+
+
+</body>
+</html>

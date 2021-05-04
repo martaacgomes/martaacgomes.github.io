@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <script type = "text/javascript" >
+    function preventBack(){window.history.forward();}
+    setTimeout("preventBack()", 0);
+    window.onunload=function(){null};
+  </script>
+
+  <link rel = "icon" href = "child_hat_boy_people_icon_124585.ico" type = "image/x-icon">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Jogo do Diogo</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/regras.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="background d-flex" id="wrapper">
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav id=navbar class="navbar navbar-expand-lg navbar-light bg-light">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <a class="navbar-brand" href="firstpage.html">
+            <div class="logo-image">
+              <img src="logo.png" class="img-fluid">
+            </div>
+          </a>
+
+          <!-- AQUI PODERIA ESTAR A MESMA IMAGEM QUE ESTÁ NAS CARTAS -->
+
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="regras.html">Regras</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Templates
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="template_atividades.html">Atividades</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="template_perguntas.html">Perguntas</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="atividades_indoor.html">Atividades em Casa</a>
+            <li class="nav-item dropdown">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Logout</a>
+            <li class="nav-item dropdown">
+          </ul>
+        </div>
+      </nav>
+
+      <div id="rules" class="container-fluid">
+        <h2 class="mt-4" align="center"> Regras do Jogo:</h2>
+        <ol>
+          <li>Podem jogar até 4 jogadores em simultâneo.</li>
+          <li>Cada jogador deve escolher a personagem com a qual vai jogar.</li>
+          <li>Para escolher qual o jogador que vai iniciar o jogo, todos os participantes lançam os dados, aquele que tiver o maior número, é o primeiro a jogar. No caso de haver um empate, repete-se o lançamento entre os jogadores que empataram.</li>
+          <li>Na primeira jogada nenhum jogador tem de responder a uma questão. Apenas lançar os dados e andar quantas casas este mostrar.</li>
+          <li>Calhas-te numa casa laranja? Na próxima jogada tens de responder e acertar a uma pergunta para puderes lançar os dados. Se não acertares, não jogas. </li>
+          <li>Calhas-te numa casa azul? Na próxima jogada podes lançar os dados e jogar sem ter de responder nenhuma pergunta.</li>
+          <li>Calhas-te no inicio de uma escada? Podes avançar para o final da mesma. Por exemplo, se calhares na casa 19 avanças para a 66.</li>
+          <li>Calhas-te na cauda da cobra? Recua até à casa onde está a cabeça da cobra. Por exemplo, se calhares na casa 25, recuas, para a 6.</li>
+          <li>Calhas-te na estrela? Podes escolher um adeversário para recuar uma casa . Por exemplo, se calhares na casa 18, e o adversário escolhido tiver na casa 55, este recua para a 54.</li>
+          <li>Calhas-te no botão verde? Podes jogar outra vez sem responder a nenhuma questão.</li>
+          <li>Calhas-te no botão vermelho? Ficas uma ronda sem jogar e, quando for a tua vez, tens de responder a uma pergunta para puderes lançar os dados. </li>
+          <li>O jogador que ganhar, pode tirar uma carta de atividade para realizar. </li>
+            <br>
+          <h5>BOA SORTE!</h5>
+            <img src="smile.svg.png" alt="smile" width="100" height="100">
+        </ol>
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Menu Toggle Script -->
+  <script>
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+
+</body>
+
+</html>
